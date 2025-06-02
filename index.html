@@ -102,6 +102,44 @@
       </style>
     </head>
     <body>
-      
+      <h1> Moonlight Image Show </h1>
+      <div class="gallery-box">
+        <h2> Manual Image Gallery </h2>
+        <button class= "scroll-btn scroll-left" onclick="scrollgallery(-320)">&#8592;</button>
+        <div class="gallery-container" id="gallery">
+          <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+        </div>
+        <button class="scroll-btn scroll-right" onclick="scrollgallery(320)">&#8594;</button>
+      </div>
+      <div class="scrolling-strip">
+        <div class="scrolling-content">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+         
+
+
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+           <img src="">
+        </div>
+        <script>
+          function scrollgallery(amount) {
+            const gallery= document.getElementById("gallery");
+            gallery scrollBy({ left: amount, behavior:"smooth"});
+          }
+        </script>
     </body>
   </html>
