@@ -31,11 +31,13 @@
           text-align: center;
           margin-bottom: 15px;
         }
-        .gallary-container {
+        .gallery-container {
           display: flex;
+          flex-wrap: nowrap;
           overflow-x: auto;
           scroll-behavior: smooth;
         }
+        
         .gallery-container img {
           width: 300px;
           margin-right:15px;
@@ -105,7 +107,8 @@
       <h1> Moonlight Image Show </h1>
       <div class="gallery-box">
         <h2> Manual Image Gallery </h2>
-        <button class= "scroll-btn scroll-left" onclick="scrollgallery(-320)">&#8592;</button>
+        <button class="scroll-btn scroll-left" onclick="scrollgallery(-320)">&#8592;</button>
+        
         <div class="gallery-container" id="gallery">
           <img src="https://tse4.mm.bing.net/th?id=OIP.7cvWt3m9qNs300Ug5r5GugHaEo&pid=Api&P=0&h=180">
            <img src="https://wallpapercave.com/wp/wp3398183.jpg">
@@ -115,6 +118,7 @@
            <img src="https://thumbs.dreamstime.com/b/vertical-shot-sea-waves-beach-next-to-mountains-under-bright-moonlight-200527654.jpg">
            <img src="https://wallup.net/wp-content/uploads/2015/12/59462-landscape-lake-trees-night-moon-moonlight-nature.jpg">
         </div>
+        
         <button class="scroll-btn scroll-right" onclick="scrollgallery(320)">&#8594;</button>
       </div>
       <div class="scrolling-strip">
