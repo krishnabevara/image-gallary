@@ -1,11 +1,11 @@
-<DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
       <title> Moonlight ShowCase</title>
       <style>
         body {
           margin: 0;
-          font-family: 'Segoe UI', sana-serif;
+         font-family: 'Segoe UI', sans-serif;
           background: linear-gradient( to bottom, midnightblue, slateblue, lightsteelblue);
           color: white;
           padding:40px;
@@ -43,7 +43,7 @@
           box-shadow: 0 4px 8px gray;
           transition: transform 0.3s;
         }
-        .ga;;ery-container img:hover {
+        .gallery-container img:hover {
           transform: scale(1.05);
         }
         .scroll-btn {
@@ -88,7 +88,7 @@
           display: inline-block;
           transition: transform 0.3s;
         }
-        .scrolling-content img: hover {
+        .scrolling-content img:hover {
           transform: scale(1.1);
         }
         @keyframes scroll-left{
@@ -138,7 +138,7 @@
         <script>
           function scrollgallery(amount) {
             const gallery= document.getElementById("gallery");
-            gallery scrollBy({ left: amount, behavior:"smooth"});
+            gallery.scrollBy({ left: amount, behavior:"smooth"});
           }
         </script>
     </body>
